@@ -1,6 +1,8 @@
 import createItem from "./services/item.js";
 import * as cartService from "./services/cart.js"
 
+// Examples on how to use the system
+
 const cart = [];
 
 const item1 = await createItem("mouse", 99.99, 1);
@@ -12,4 +14,5 @@ await cartService.addItem(cart, item2);
 await cartService.removeItem(cart, item2);
 
 await cartService.displayCart(cart);
+
 console.log("\n💵 Total of the cart: $" + await cartService.calculateTotal(cart));

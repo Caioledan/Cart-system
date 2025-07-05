@@ -2,7 +2,7 @@
     1. Create item ✅
 */ 
 
-
+/// Function to create an item
 async function createItem(name, price, quantity) {
     return {
         name,
